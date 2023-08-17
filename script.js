@@ -23,9 +23,11 @@ function cat_details(){
                 var tags = data[i].tags;
                 console.log(`${id} || ${owner} || ${tags}`);
                 row.innerHTML += ` <div class="col-lg-4, col-sm-12" id="card">
-                <label for="cat_id" class="details">Cat_ID : ${id}</label><br>
-                <label for="owner" class="details">Owner : ${owner}</label><br>
-                <label for="tags" class="details">Tags : ${tags}</label><br>
+                <div class="label">
+                    <p for="cat_id" class="details">Cat_ID: ${id}</p>
+                    <p for="owner" class="details">Owner: ${owner}</p>
+                    <p for="tags" class="details">Tags: ${tags}</p>
+                </div>
                 </div>`;
                 document.body.append(create_container);
             }
